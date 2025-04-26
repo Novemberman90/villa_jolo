@@ -9,11 +9,255 @@
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
-<header class="header" style="background-image: url('');" id="header">
+<header class="header" id="header">
+  <div class="header__menu">
+    <a class="header__logo" href="#">
+      <img class="header__logo" src="../images/icon/logo.svg" alt="logo">
+    </a>
+    <nav class="menu">
+      <button class="menu__btn">
+        <p>Menu</p>
+      </button>
+      <div class="menu__block">
+        <img class="menu__logo" src="../images/icon/logo.svg" alt="">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              About Us
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Gallery
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div class="menu__contact-box">
+          <h3 class="menu__contact-title">
+            Contact
+          </h3>
+          <address class="menu__contact-adress">
+            <p>
+              Latsi Beach, Polis Cyprus
+            </p>
+          </address>
+          <a class="menu__contact-email" href="mailto:info@villajolo.com">info@villajolo.com</a>
+          <a class="menu__contact-tel" href="tel:+35799901551">+357 99901551</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="header__top">
+    <div class="header__top-bg">
+      <img src="../images/content/header-bg.jpg" alt="">
+    </div>
+    <div class="header__text-box">
+      <h1 class="header__title">
+        Welcome to
+        The Villa Jolo
+      </h1>
+    </div>
+  </div>
+  <div class="header__inner">
+    <div class="header__content">
+      <p class="header__text">
+        The Villa Jolo  located in the charming town of Latsi, near Polis in Cyprus. Nestled just 20 meters from the beach, the
+        villa offers breathtaking first-line sea views.
+      </p>
+      <ul class="vilas-description">
+        <li class="vilas-description-item">
+          <span>6</span><p>guests</p>
+        </li>
+        <li class="vilas-description-item">
+          <span>3</span><p>bedrooms</p>
+        </li>
+        <li class="vilas-description-item">
+          <span>2</span><p>bathrooms</p>
+        </li>
+        <li class="vilas-description-item">
+          <span>320</span><p>sqm</p>
+        </li>
+      </ul>
+    </div>
+    <div class="header__video-block" style="background-image: url('../images/content/header-video.jpg');">
+      <div class="header__video-popup">
+        <a class="header__video-link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)" fill="#FCFBF9" />
+            <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)" stroke="#292725"
+              stroke-width="1.5" />
+            <path
+              d="M41.9814 30.5508C43.0405 31.2627 43.005 32.8632 41.875 33.5156L28.375 41.3096L28.2646 41.3682C27.1184 41.9299 25.75 41.099 25.75 39.7939L25.75 24.2061C25.75 22.8589 27.2083 22.0169 28.375 22.6904L41.875 30.4844L41.9814 30.5508Z"
+              stroke="#292725" stroke-width="1.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </header>
 <main class="main">
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__video-block" style="background-image: url('../images/content/');">
+          <div class="about__video-popup">
+            <a class="about__video-link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)"
+                  fill="#FCFBF9" />
+                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)"
+                  stroke="#292725" stroke-width="1.5" />
+                <path
+                  d="M41.9814 30.5508C43.0405 31.2627 43.005 32.8632 41.875 33.5156L28.375 41.3096L28.2646 41.3682C27.1184 41.9299 25.75 41.099 25.75 39.7939L25.75 24.2061C25.75 22.8589 27.2083 22.0169 28.375 22.6904L41.875 30.4844L41.9814 30.5508Z"
+                  stroke="#292725" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="about__content">
+          <div class="about__content-text">
+            <p>The Villa Jolo  located in the charming town of Latchi, near Polis in Cyprus. Nestled just 20 meters from the beach, the
+            villa offers breathtaking first-line sea views.
+          </p>
+            <p>
+              Situated in a serene and picturesque area, it provides the perfect retreat for relaxation and tranquility.
+            </p>
+            <p>
+              This is the ideal place for you to escape the hustle and bustle of everyday life and immerse yourself in the beauty of
+              nature.
+            </p>
+          </div>
+          <a class="about__content-link" href="#" target="_blank" rel="noopener noreferrer">About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="location">
+    <div class="location__inner">
+      <div class="location__content">
+        <h2 class="location__title title">Location</h2>
+        <p class="location__descr">The villa is located in the charming town of Latsi, in the north west part of Cyprus.
+        </p>
+        <img class="location__map-img" src="" alt="map location">
+        <div class="location__block-link">
+          <div class="location__link-decsr">
+            <p class="location__pre-title">Location</p>
+            <h3 class="location__link-title">Latchi Beach</h3>
+            <h4 class="location__sub-title">Cyprus</h4>
+          </div>
+          <a class="location__link-map" href="#" target="_blank" rel="noopener noreferrer">google maps</a>
+        </div>
+      </div>
+      <div class="location__img-block">
+        <img class="location__img" src="" alt=" resort photo">
+        <img class="location__img" src="" alt=" resort photo">
+        <img class="location__img" src="" alt=" resort photo">
+      </div>
+    </div>
+  </section>
+  <section class="rooms">
+    <div class="container">
+      <h2 class="rooms__title title">Rooms</h2>
+      <div class="rooms__inner">
+        <img class="rooms__img" src="" alt="rooms photo">
+        <div class="rooms__descr">
+          <ul class="vilas-description">
+            <li class="vilas-description-item">
+              <span>6</span>
+              <p>guests</p>
+            </li>
+            <li class="vilas-description-item">
+              <span>3</span>
+              <p>bedrooms</p>
+            </li>
+            <li class="vilas-description-item">
+              <span>2</span>
+              <p>bathrooms</p>
+            </li>
+            <li class="vilas-description-item">
+              <span>320</span>
+              <p>sqm</p>
+            </li>
+          </ul>
+
+          <h3 class="rooms__descr-title">Key features</h3>
+          <ul class="rooms__descr-list">
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+            <li class="rooms__descr-item">
+              <img src="../images/icon/" alt="decsriprion icon" class="rooms__descr-img">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </section>
 </main>
 <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img src="" alt="fotter logo">
+      <div class="footer__column">
+        <h3 class="footer__title">About us</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Rooms</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Location</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Villa</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Makes us unique</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Booking</a></li>
+        </ul>
+        <div class="footer__column">
+          <h3 class="footer__title">Contact</h3>
+          <ul class="footer__list">
+            <li class="footer__item">Latsi Beach, Polis Cyprus</li>
+            <li class="footer__item"><a href="mailto:info@villajolo.com" class="footer__link">info@villajolo.com</a></li>
+            <li class="footer__item"><a href="tel:+35799901551" class="footer__link">+357 99901551</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a class="footer__bottom-link" href="#">Legal notice</a>
+      <a class="footer__bottom-link" href="#">© 2025 Unanime</a>
+      <a class="footer__bottom-link go-to" href="#">Back to top</a>
+    </div>
+  </div>
 </footer>
 
   <script src="./js/main.min.js"></script>

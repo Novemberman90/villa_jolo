@@ -1,79 +1,199 @@
 
 .header {
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  min-height: 100%;
-
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  &__top {
+    height: calc(100% - 63px);
+  }
+  &__top-bg {
+    padding: 10px 10px 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    img {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 14px 0 40px;
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+  &__title {
+    @extend %YO-400;
+    font-size: 54px;
+    text-align: center;
+    color: $white;
+    max-width: 368px;
+    width: 100%;
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
 }
 
-
 .menu {
+  &__block {
+    background-color: $white;
+    width: 516px;
+    padding: 24px;
+    border-radius: 100px 100px;
+  }
   &__btn {
     display: none;
+    &:hover {
+      font-weight: 700;
+    }
   }
-
-  &__block {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  &__logo {
+    display: none;
   }
-
   &__list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-  }
-
-  &__link,
-  &__lang-link {
-    @extend %Montserrat-700;
-    letter-spacing: .02em;
-
-    &--active {
-      color: $blue;
-    }
-
-    &:hover {
-      color: $blue;
-    }
+    gap: 40px;
   }
 
   &__link {
-    @extend %uppercase;
-  }
-
-  &__lang-link {
+    @extend %NM-400;
+    color: $black;
+    font-size: 16px;
     @extend %capitalaize;
-  }
-
-  &__lang-list {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  &__lang-item {
-    padding-right: 10px;
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background-color: $white;
+    padding: 8px 12px;
+    &--active {
+      @extend %NM-700;
     }
 
-    &:last-child {
-      padding-right: 0;
+    &:hover {
+      @extend %NM-700;
+    }
+  }
+  &__contact-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  &__contact-title {
+    font-size: 20px;
+  }
+  &__contact-adress,
+  &__contact-tel {
+    font-size: 17px;
+  }
+  &__contact-email {
+    font-size: 18px;
+    display:inline-block;
+  }
+  &__contact-tel {
+    display: inline-block;
+  }
+}
 
-      &::after {
-        display: none;
-      }
+@media (max-width: 814px) {
+  .menu {
+    &__block {
+      width: 426px;
+    }
+    &__list {
+      gap: 20px;
     }
   }
 }
 
+@media (max-width: 640px) {
+  .menu {
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      border-radius: 0;
+      padding: 40px;
+      background-color: $white;
+      z-index: 100;
+      transform: translateY(-200%);
+      transition: transform .5s;
+    
+      &--active {
+        transform: translateY(0);
+      }
+
+    }
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 74px;
+      padding: 0;
+    }
+    &__contact-box {
+      display: flex;
+    }
+    &__btn {
+      display: inline-block;
+      background-color: $white;
+      border: none;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      color: $black;
+      z-index: 105;
+    
+      &--active {
+        position: relative;
+        border: 1px solid $black;
+        p {
+          display: none;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          background-image: url('../images/icon/close-btn.svg');
+          width: 33px;
+          height: 16px;
+          top: 50%;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &__logo {
+      display: block;;
+      width: 76px;
+      height: 65px;
+      object-fit: cover;
+    }
+  }
+}

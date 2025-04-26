@@ -1,5 +1,14 @@
 
 @font-face {
+  font-family: 'NeueMontreal-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('NeueMontreal-Bold'),
+    url('../fonts/NeueMontreal-Bold.woff2') format('woff2'),
+    url('../fonts/NeueMontreal-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
   font-family: 'NeueMontreal-Regular';
   font-weight: 400;
   font-style: normal;
