@@ -1,5 +1,17 @@
 $(document).ready(function () {
   
+  $('.rooms-tabs__carusel').slick({
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: false,    
+    dots: false, 
+    variableWidth: true, // картинки могут быть разной ширины
+    swipeToSlide: true,
+    lazyLoad: 'ondemand',
+})
+
+
   // rooms tabs control
     $('.rooms-tabs__button').on('click', function(e) {
     e.preventDefault(); // отменяем переход по ссылке

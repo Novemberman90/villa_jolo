@@ -237,24 +237,10 @@
     }
   }
   &__content {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
     padding-bottom: 10px;
-
-  
   }
   &__panel {
     display: none;
-    max-width: 1240px;
-    flex-shrink: 0;
-    gap: 20px;
-    overflow-x: auto;
-    white-space: nowrap;
-    &::-webkit-scrollbar {
-        display: none;
-      }
-    
     img {
       width: 100%;
       height: auto;
@@ -263,13 +249,15 @@
     }
 
     &--active {
-      display: flex;
+      display: block;
     }
   }
-  &__card {
-    min-width: 400px;
+  .slick-slide {
     width: auto;
-    display: inline-block;
+  }
+  &__card {
+    width: auto;
+    padding: 0 10px;
   }
   &__card-titlebox {
     margin-top: 18px;
