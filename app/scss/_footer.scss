@@ -5,8 +5,14 @@
     gap: 40px;
     margin-bottom: 80px;
   }
+  &__logo {
+    width: 173px;
+    height: auto;
+    object-fit: cover;
+  }
   &__column {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
   &__title {
     @extend %NM-500;
@@ -25,5 +31,38 @@
   &__bottom-link {
     font-size: 17px;
     line-height: 1.2;
+  }
+}
+.back-to-top {
+  position: relative;
+  padding: 5px 32px 5px 16px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 6px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/icon/go-top.svg');
+  }
+}
+@media (max-width: 814px) {
+  .footer {
+    &__top {
+      gap: 30px;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .footer{
+    &__top {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &__logo {
+      align-self: center;
+    }
   }
 }

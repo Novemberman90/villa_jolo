@@ -1,5 +1,6 @@
 $(document).ready(function () {
   
+
     $('.rooms-tabs__button').on('click', function(e) {
     e.preventDefault(); // отменяем переход по ссылке
 
@@ -30,4 +31,14 @@ $(document).ready(function () {
       });
   })
 
+  $(function(){
+    $('.back-to-top').on('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top:0,
+        behavior: "smooth"
+      })
+    })
+  }) 
+  
 });
