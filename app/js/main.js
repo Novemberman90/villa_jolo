@@ -1,6 +1,6 @@
 $(document).ready(function () {
   
-
+  // rooms tabs control
     $('.rooms-tabs__button').on('click', function(e) {
     e.preventDefault(); // отменяем переход по ссылке
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('#' + tabId).addClass('rooms-tabs__panel--active');
   });
 
-
+  // Menu 
   $(function (params) {
     $('.menu__btn').on('click', function() {
       $('.menu__block').toggleClass('menu__block--active');
@@ -31,8 +31,9 @@ $(document).ready(function () {
       });
   })
 
+// Go to top
   $(function(){
-    $('.back-to-top').on('click', function(e) {
+    $('.footer__back-to-top').on('click', function(e) {
       e.preventDefault();
       window.scrollTo({
         top:0,
@@ -41,4 +42,5 @@ $(document).ready(function () {
     })
   }) 
   
+
 });

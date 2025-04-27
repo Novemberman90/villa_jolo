@@ -6,6 +6,7 @@
   <title></title>
   <meta name="description"
     content="">
+    <link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
@@ -105,7 +106,7 @@
   </div>
   
 </header>
-<!-- <main class="main">
+<main class="main">
   <section class="about">
     <div class="container">
       <div class="about__inner">
@@ -229,17 +230,19 @@
       </div>
     </div>
 
-    <section class="rooms-tabs">
-      <div class="rooms-tabs__nav" role="tablist">
-        <a href="#bedroom1" class="rooms-tabs__button rooms-tabs__button--active" data-tab="bedroom1">Bedroom 1</a>
-        <a href="#bedroom2" class="rooms-tabs__button" data-tab="bedroom2">Bedroom 2</a>
-        <a href="#bedroom3" class="rooms-tabs__button" data-tab="bedroom3">Bedroom 3</a>
-        <a href="#livingroom" class="rooms-tabs__button" data-tab="livingroom">Living Room</a>
-        <a href="#kitchen" class="rooms-tabs__button" data-tab="kitchen">Kitchen</a>
-        <a href="#lounge" class="rooms-tabs__button" data-tab="lounge">Outdoor lounge</a>
-        <a href="#barbecue" class="rooms-tabs__button" data-tab="barbecue">Barbecue</a>
-        <a href="#activities" class="rooms-tabs__button" data-tab="activities">Activities</a>
-        
+    <div class="rooms-tabs">
+      <div class="container">
+        <div class="rooms-tabs__nav" role="tablist">
+          <a href="#bedroom1" class="rooms-tabs__button rooms-tabs__button--active" data-tab="bedroom1">Bedroom 1</a>
+          <a href="#bedroom2" class="rooms-tabs__button" data-tab="bedroom2">Bedroom 2</a>
+          <a href="#bedroom3" class="rooms-tabs__button" data-tab="bedroom3">Bedroom 3</a>
+          <a href="#livingroom" class="rooms-tabs__button" data-tab="livingroom">Living Room</a>
+          <a href="#kitchen" class="rooms-tabs__button" data-tab="kitchen">Kitchen</a>
+          <a href="#lounge" class="rooms-tabs__button" data-tab="lounge">Outdoor lounge</a>
+          <a href="#barbecue" class="rooms-tabs__button" data-tab="barbecue">Barbecue</a>
+          <a href="#activities" class="rooms-tabs__button" data-tab="activities">Activities</a>
+          
+        </div>
       </div>
     <div class="container">
       <div class="rooms-tabs__content">
@@ -431,47 +434,53 @@
 
       </div>
     </div>
-    </section>
+  </div>
 
   </section>
-</main> -->
+</main>
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <img class="footer__logo" src="../images/icon/logo-footer.svg" alt="fotter logo">
-      <div class="footer__column">
-        <h3 class="footer__title">About us</h3>
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Rooms</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Location</a></li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <h3 class="footer__title">Villa</h3>
-        <ul class="footer__list">
-          <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Makes us unique</a></li>
-          <li class="footer__item"><a href="#" class="footer__link">Booking</a></li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <h3 class="footer__title">Contact</h3>
-        <ul class="footer__list">
-          <li class="footer__item">Latsi Beach, Polis Cyprus</li>
-          <li class="footer__item"><a href="mailto:info@villajolo.com" class="footer__link">info@villajolo.com</a></li>
-          <li class="footer__item"><a href="tel:+35799901551" class="footer__link">+357 99901551</a></li>
-        </ul>
+      <div class="footer__column-block">
+        <div class="footer__column">
+          <h3 class="footer__title">About us</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Rooms</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Location</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Villa</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Makes us unique</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Contact</h3>
+          <ul class="footer__list">
+            <li class="footer__item">Latsi Beach, Polis Cyprus</li>
+            <li class="footer__item"><a href="mailto:info@villajolo.com" class="footer__link">info@villajolo.com</a></li>
+            <li class="footer__item"><a href="tel:+35799901551" class="footer__link">+357 99901551</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <a class="footer__bottom-link" href="#">Legal notice</a>
-      <a class="footer__bottom-link" href="#">© 2025 Unanime</a>
-      <a class="footer__bottom-link back-to-top" href="#">Back to top</a>
+      <a class="footer__bottom-link footer__bottom-notice" href="#">Legal notice</a>
+      <a class="footer__bottom-link footer__bottom-unanime" href="#">© 2025 Unanime</a>
+      <div class="footer__bottom-link footer__bottom-gotop">
+        <a class="footer__back-to-top" href="#">Back to top
+          <img src="../images/icon/go-top.svg" alt="">
+        </a>
+      </div>
     </div>
   </div>
 </footer>
-
+<script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="./js/main.min.js"></script>
 </body>
 </html>
