@@ -23,6 +23,7 @@
   &__title {
     @extend %NM-500;
     font-size: 20px;
+    margin-bottom: 35px;
   }
   &__list {
     display: flex;
