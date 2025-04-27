@@ -4,11 +4,16 @@ $white: #fff;
 $grey: #7C7C7C;
 $grey-accent: #DDDDDD;
 $blue: #375EFE;
+$white-accent: #FCFBF9;
 
 
 %NM-700 {
   font-family: 'NeueMontreal-Bold';
   font-weight: 700;
+}
+%NM-500 {
+  font-family: 'NeueMontreal-Medium';
+  font-weight: 500;
 }
 %NM-400 {
   font-family: 'NeueMontreal-Regular';

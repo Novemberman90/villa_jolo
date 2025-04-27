@@ -1,0 +1,237 @@
+.about {
+  padding-top: 160px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__video-block {
+    width: 530px;
+    height: 594px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    margin-left: 80px;
+  }
+  &__content-text {
+    max-width: 620px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+  &__content-link {
+    padding: 20px 100px 20px 57px;
+    border: 1.5px solid $black;
+    border-radius: 100px;
+    cursor: pointer;
+    background: $white;
+    background-color: $white-accent;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 33px;
+      height: 16px;
+      right: 58px;
+      background-image: url('../images/icon/arrow-rigth.svg');
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.location {
+  padding-top: 160px;
+  &__inner {
+    display: flex;
+  }
+  &__content {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+  }
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__descr {
+    font-size: 32px;
+  }
+  &__map-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  &__block-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__pre-title {
+    font-size: 12px;
+    color: $blue;
+    margin-bottom: 5px;
+  }
+  &__link-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  &__sub-title {
+    font-size: 22px;
+    color: $grey;
+  }
+  &__link-map {
+    padding: 20px 85px 20px 42px;
+    border: 1.5px solid $black;
+    border-radius: 100px;
+    cursor: pointer;
+    background: $white;
+    background-color: $white-accent;
+    position: relative;
+    @extend %capitalaize;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 33px;
+      height: 16px;
+      right: 42px;
+      background-image: url('../images/icon/arrow-rigth.svg');
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__img-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.rooms {
+  padding-top: 160px;
+  &__title {
+    margin-bottom: 80px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__img {
+    width: 608px;
+    height: auto;
+    object-fit: cover;
+  }
+  &__descr {
+    width: 552px;
+    margin-left: 80px;
+  }
+  &__descr-title {
+    @extend %NM-400;
+    font-size: 22px;
+    margin: 40px 0;
+  }
+  &__descr-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 70px;
+    align-items: center;
+    font-size: 22px;
+  }
+  &__descr-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.rooms-tabs {
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    overflow-x: auto;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto 40px auto;
+    max-width: 1336px;
+    width: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__button {
+    @extend %NM-400;
+    font-size: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0 14px 20px 14px;
+    margin-bottom: -1px;
+    color: $black;
+    opacity: 0.6;
+    transition: 0.3s;
+    @extend %capitalaize;
+
+    &--active {
+      opacity: 1;
+      border-bottom: 1.5px solid $black;
+    }
+  }
+  &__content {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__panel {
+    display: none;
+    min-width: 400px;
+    flex-shrink: 0;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &--active {
+      display: flex;
+    }
+  }
+  &__card {
+    min-width: 400px;
+    display: inline-block;
+  }
+  &__card-titlebox {
+    margin-top: 18px;
+  }
+  &__card-pretitle {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: $blue;
+  }
+  &__card-title {
+    font-size: 22px;
+    @extend %NM-400;
+  }
+}
