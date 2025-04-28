@@ -33,12 +33,12 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#gallery">
                 Gallery
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="#contact">
                 Contact
               </a>
             </li>
@@ -137,12 +137,12 @@
               nature.
             </p>
           </div>
-          <a class="about__content-link" href="#" target="_blank" rel="noopener noreferrer">About Us</a>
+          <a class="about__content-link" href="./about.html" target="_blank" rel="noopener noreferrer">About Us</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="location">
+  <section class="location" id="contact">
     <div class="container">
       <div class="location__inner">
         <div class="location__content">
@@ -229,18 +229,17 @@
       </div>
     </div>
 
-    <div class="rooms-tabs">
+    <div class="rooms-tabs" id="gallery">
       <div class="container">
         <div class="rooms-tabs__nav" role="tablist">
-          <a href="#bedroom1" class="rooms-tabs__button rooms-tabs__button--active" data-tab="bedroom1">Bedroom 1</a>
-          <a href="#bedroom2" class="rooms-tabs__button" data-tab="bedroom2">Bedroom 2</a>
-          <a href="#bedroom3" class="rooms-tabs__button" data-tab="bedroom3">Bedroom 3</a>
-          <a href="#livingroom" class="rooms-tabs__button" data-tab="livingroom">Living Room</a>
-          <a href="#kitchen" class="rooms-tabs__button" data-tab="kitchen">Kitchen</a>
-          <a href="#lounge" class="rooms-tabs__button" data-tab="lounge">Outdoor lounge</a>
-          <a href="#barbecue" class="rooms-tabs__button" data-tab="barbecue">Barbecue</a>
-          <a href="#activities" class="rooms-tabs__button" data-tab="activities">Activities</a>
-          
+          <button type="button" class="rooms-tabs__button rooms-tabs__button--active" data-tab="bedroom1">Bedroom 1</button>
+          <button type="button" class="rooms-tabs__button" data-tab="bedroom2">Bedroom 2</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="bedroom3">Bedroom 3</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="livingroom">Living Room</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="kitchen">Kitchen</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="lounge">Outdoor lounge</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="barbecue">Barbecue</button>
+          <button  type="button" class="rooms-tabs__button" data-tab="activities">Activities</button>
         </div>
       </div>
     <div class="container">
@@ -273,14 +272,14 @@
     
         <div class="rooms-tabs__panel" id="bedroom2">
           <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
+            <div class="rooms-tabs__card rooms-tabs__card--bedroom2">
               <img src="./images/rooms/Bedroom-2.1.jpg" alt="Bedroom 2">
               <div class="rooms-tabs__card-titlebox">
                 <p class="rooms-tabs__card-pretitle">Bedroom 2</p>
                 <h4 class="rooms-tabs__card-title">Bedroom </h4>
               </div>
             </div>
-            <div class="rooms-tabs__card">
+            <div class="rooms-tabs__card rooms-tabs__card--bedroom2">
               <img src="./images/rooms/Bedroom-2.2.jpg" alt="Bedroom 2">
               <div class="rooms-tabs__card-titlebox">
                 <p class="rooms-tabs__card-pretitle">Bedroom 2</p>
@@ -384,15 +383,13 @@
         </div>
 
         <div class="rooms-tabs__panel" id="lounge">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <img src="./images/rooms/lounge.jpg" alt="lounge">
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Outdoor lounge</p>
-                <h4 class="rooms-tabs__card-title">Photo 1</h4>
-              </div>
-            </div> 
-          </div>
+          <div class="rooms-tabs__card">
+            <img src="./images/rooms/lounge.jpg" alt="lounge">
+            <div class="rooms-tabs__card-titlebox">
+              <p class="rooms-tabs__card-pretitle">Outdoor lounge</p>
+              <h4 class="rooms-tabs__card-title">Photo 1</h4>
+            </div>
+          </div> 
         </div>
 
         <div class="rooms-tabs__panel" id="barbecue">
@@ -462,17 +459,17 @@
         <div class="footer__column">
           <h3 class="footer__title">About us</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Rooms</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Location</a></li>
+            <li class="footer__item"><a href="#gallery" class="footer__link">Activities</a></li>
+            <li class="footer__item"><a href="#gallery" class="footer__link">Rooms</a></li>
+            <li class="footer__item"><a href="#contact" class="footer__link">Location</a></li>
           </ul>
         </div>
         <div class="footer__column">
           <h3 class="footer__title">Villa</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Gallery</a></li>
+            <li class="footer__item"><a href="#gallery" class="footer__link">Gallery</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Makes us unique</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Booking</a></li>
+            <li class="footer__item"><a href="https://www.booking.com/" class="footer__link" target="_blank">Booking</a></li>
           </ul>
         </div>
         <div class="footer__column">
