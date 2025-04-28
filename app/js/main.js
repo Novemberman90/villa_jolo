@@ -34,9 +34,6 @@ $(document).ready(function () {
   ] */
 })
 
-
-
-
   // rooms tabs control
   $(function (params) {
   $('.rooms-tabs__button').on('click', function() {
@@ -85,28 +82,21 @@ $(function() {
   // Плавный скролл при клике на якоря
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
-    let target = $($(this).attr('href'));
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 800);
+    
+    let target = document.querySelector(this.getAttribute('href'));
+    
+    if (target) {
+      setTimeout(function(){
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        $('.menu__block').removeClass('menu__block--active');
+        $('.menu__btn').removeClass('menu__btn--active');
+        $('body').removeClass('lock');
+      },100)
     }
-    $('body').removeClass('lock');
   });
-
-  // Плавный скролл при ЗАГРУЗКЕ страницы, если есть хеш
-  if (window.location.hash) {
-    setTimeout(function() {
-      let target = $(window.location.hash);
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-      }
-    }, 300); // небольшая задержка, чтобы успел прогрузиться контент
-  }
 });
-
-
 
 });
