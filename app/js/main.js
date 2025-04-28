@@ -63,7 +63,7 @@ $(document).ready(function () {
     $('.menu__btn').on('click', function() {
       $('.menu__block').toggleClass('menu__block--active');
       $('.menu__btn').toggleClass('menu__btn--active');
-      $('body').addClass('lock');
+      $('body').toggleClass('lock');
     });
     
      $(document).on('click', function(e) {
