@@ -130,7 +130,6 @@
   &__inner {
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
   }
   &__img {
     width: 608px;
@@ -209,6 +208,7 @@
 }
 
 .rooms-tabs {
+  padding-top: 80px;
   &__nav {
     display: flex;
     align-items: center;
@@ -230,7 +230,10 @@
     color: $black;
     opacity: 0.6;
     @extend %capitalaize;
+    background-color: transparent;
+    border: none;
     position: relative;
+    cursor: pointer;
     &--active {
       opacity: 1;
       border-bottom: 3px solid $black;
@@ -256,8 +259,8 @@
     width: auto;
   }
   &__card {
-    width: auto;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 10px 0 5px;
   }
   &__card-titlebox {
     margin-top: 18px;
@@ -333,7 +336,6 @@
   .rooms {
     &__inner {
       display: block;
-      margin-bottom: 80px;
     }
     &__img {
       width: 100%;
@@ -408,6 +410,14 @@
           padding-left: 0;
         }
       }
+    }
+  }
+  .rooms-tabs {
+    .slick-slide {
+      width: 343px;
+    }
+    &__cards {
+      width: 343px;
     }
   }
 }
