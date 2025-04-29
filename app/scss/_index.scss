@@ -6,16 +6,22 @@
     align-items: center;
   }
   &__video-block {
+    background-image: url('../images/content/about-video.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     min-width: 530px;
     min-height: 594px;
     height: auto;
     border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url('../images/content/about-video@x2.jpg');
+    }
   }
   &__content {
     margin-left: 10px;
@@ -76,6 +82,14 @@
     border-radius: 12px;
     overflow: hidden;
   }
+  &__img {
+    width: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
   &__block-link {
     display: flex;
     justify-content: space-between;
@@ -132,9 +146,11 @@
     align-items: center;
   }
   &__img {
-    width: 608px;
-    height: auto;
-    object-fit: cover;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
   }
   .vilas-description {
 
@@ -278,7 +294,7 @@
 
 @media (max-width: 1320px) {
   .about {
-    padding-top: 100px;
+    padding-top: 105px;
     &__inner {
       display: block;
     }
@@ -294,6 +310,7 @@
     }
   }
 }
+
 @media (max-width: 1180px) {
   .location {
     &__inner {
@@ -306,6 +323,33 @@
   .rooms {
     &__img {
       width: 40%;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    &__video-block {
+      background-size: 100% auto;
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url('../images/content/about-video@x2-l.jpg');
+      }
+    }
+  }
+  .rooms {
+    &__inner {
+      display: block;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__descr {
+      margin-left: 0;
+      padding-top: 40px;
+      width: 100%;
     }
   }
 }
@@ -333,19 +377,7 @@
       max-width: 100%;
     }
   }
-  .rooms {
-    &__inner {
-      display: block;
-    }
-    &__img {
-      width: 100%;
-    }
-    &__descr {
-      margin-left: 0;
-      padding-top: 40px;
-      width: 100%;
-    }
-  }
+
 }
 @media (max-width: 814px) {
   .about,
@@ -378,6 +410,17 @@
   
 }
 @media (max-width: 548px) {
+  .about {
+
+    &__video-block {
+      background-size: 100% auto;
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url('../images/content/about-video@x2-s.jpg');
+      }
+    }
+  }
   .location {
     &__title,
     &__descr,
